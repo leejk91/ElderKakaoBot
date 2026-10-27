@@ -14,9 +14,9 @@ python app.py
 
 ## Render 배포
 
-1. GitHub 저장소에 프로젝트를 올리고 `kakao_bot` 폴더가 저장소 안에 포함되도록 합니다.
+1. GitHub 저장소에 `app.py`, `requirements.txt`, `README.md`를 저장소 최상위에 올립니다.
 2. Render에서 **New → Web Service**를 선택해 GitHub 저장소를 연결합니다.
-3. **Root Directory**를 `kakao_bot`으로 지정합니다.
+3. **Root Directory**는 비워 둡니다.
 4. **Runtime**은 `Python 3`, **Build Command**는 `pip install -r requirements.txt`, **Start Command**는 `python app.py`로 지정합니다.
 5. Free 인스턴스를 선택하고 배포합니다. 배포 후 `https://서비스이름.onrender.com/`에 접속해 실행 안내 문구가 보이는지 확인합니다.
 6. 오픈빌더 스킬 URL에는 `https://서비스이름.onrender.com/skill`을 입력합니다.
